@@ -1,0 +1,346 @@
+[src$='blue.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/check_circle.svg',
+          $color-green);
+}
+
+[src$='red.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/error.svg',
+          $color-red);
+}
+
+[src$='yellow.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/warning.svg',
+          $color-yellow);
+}
+
+[src$='grey.png'], [src$='aborted.png'], [src$='nobuilt.png'], [src$='disabled.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/remove_circle.svg',
+          $color-grey);
+}
+
+.icon-health-80plus {
+  @include icon-img('../node_modules/jenkins-core-theme/images/weather-sunny.svg',
+          $color-grey);
+}
+
+.icon-health-60to79 {
+  @include icon-img('../node_modules/jenkins-core-theme/images/weather-partlycloudy.svg',
+          $color-grey);
+}
+
+.icon-health-40to59 {
+  @include icon-img('../node_modules/jenkins-core-theme/images/weather-cloudy.svg',
+          $color-grey);
+}
+
+.icon-health-20to39 {
+  @include icon-img('../node_modules/jenkins-core-theme/images/weather-rainy.svg',
+          $color-grey);
+}
+
+.icon-health-00to19 {
+  @include icon-img('../node_modules/jenkins-core-theme/images/weather-pouring.svg',
+          $color-grey);
+}
+
+.icon-blue-anime, [src$='blue_anime.gif'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/autorenew.svg',
+          $color-green);
+}
+
+.icon-red-anime, [src$='red_anime.gif'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/autorenew.svg',
+          $color-red);
+}
+
+.icon-grey-anime, [src$='grey_anime.gif'], .icon-nobuilt-anime, .icon-aborted-anime {
+  @include icon-img('../node_modules/jenkins-core-theme/images/autorenew.svg',
+          $color-grey);
+}
+
+.icon-yellow-anime, [src$='yellow_anime.gif'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/autorenew.svg',
+          $color-yellow);
+}
+
+[src$='blue_anime.gif'],
+[src$='red_anime.gif'],
+[src$='grey_anime.gif'],
+[src$='yellow_anime.gif'],
+.icon-blue-anime,
+.icon-red-anime,
+.icon-grey-anime,
+.icon-yellow-anime,
+.icon-nobuilt-anime,
+.icon-aborted-anime {
+  animation: rotating 2s linear infinite;
+}
+
+.icon-clock-anime {
+  @include pulse
+}
+
+.icon-new-package, [src$='new-package.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/add_circle_outline.svg',
+          $color-grey);
+  &[width="24"] {
+    @include icon($size-md);
+  }
+}
+
+.icon-user, [src$='user.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/people.svg',
+          $color-grey);
+  &[width="24"] {
+    @include icon($size-md);
+  }
+}
+
+.icon-notepad, [src$='notepad.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/history.svg',
+          $color-grey);
+}
+
+.icon-setting, [src$='setting.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/settings.svg',
+          $color-grey);
+  &[width="24"] {
+    @include icon ($size-md);
+  }
+}
+
+.icon-up {
+  @include icon-img('../node_modules/jenkins-core-theme/images/arrow_back.svg',
+          $color-grey);
+}
+
+.icon-edit-delete {
+  @include icon-img('../node_modules/jenkins-core-theme/images/delete.svg',
+          $color-grey);
+}
+
+.icon-fingerprint, [src$='fingerprint.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/fingerprint.svg',
+          $color-grey);
+  &[width="24"] {
+    @include icon($size-md);
+  }
+}
+
+.icon-graph, [src$='graph.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/insert_chart.svg',
+          $color-grey);
+}
+
+.icon-collapse {
+  @include icon-img('../node_modules/jenkins-core-theme/images/expand_less.svg',
+          $color-grey);
+}
+
+.icon-expand {
+  @include icon-img('../node_modules/jenkins-core-theme/images/expand_more.svg',
+          $color-grey);
+}
+
+.icon-help, [src$='help.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/help_outline.svg',
+          $color-grey);
+}
+
+.icon-secure, .icon-lock, [src$='secure.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/lock.svg',
+          $color-grey);
+}
+
+.icon-plugin, [src$='plugin.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/extension.svg',
+          $color-grey);
+}
+
+.icon-system-log-out, [src$='system-log-out.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/power_settings_new.svg',
+          $color-grey);
+}
+
+.icon-refresh, [src$='refresh.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/refresh.svg',
+          $color-grey);
+}
+
+.icon-computer, [src$='computer.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/computer.svg',
+          $color-grey);
+}
+
+.icon-computer-x {
+  @include icon-img('../node_modules/jenkins-core-theme/images/computer_offline.svg',
+          $color-grey);
+}
+
+.icon-new-computer {
+  @include icon-img('../node_modules/jenkins-core-theme/images/computer_new.svg',
+          $color-grey);
+}
+
+.icon-clipboard, [src$='clipboard.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/assignment.svg',
+          $color-grey);
+}
+
+.icon-monitor, [src$='monitor.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/chart-areaspline.svg',
+          $color-grey);
+}
+
+.icon-terminal, [src$='terminal.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/console.svg',
+          $color-grey);
+}
+
+.icon-network, [src$='network.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/server-network.svg',
+          $color-grey);
+}
+
+.icon-document, .icon-text {
+  @include icon-img('../node_modules/jenkins-core-theme/images/file.svg',
+          $color-grey);
+}
+
+.icon-folder, [src$='folder.png'], [src$='/directory16.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/folder.svg',
+          $color-grey);
+}
+
+.icon-clock, .icon-clock-anime, [src$='clock.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/play_circle_outline.svg',
+          $color-grey);
+}
+
+.icon-folder-delete, [src$='edit-delete.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/folder-remove.svg',
+          $color-grey);
+}
+
+.icon-previous {
+  @include icon-img('../node_modules/jenkins-core-theme/images/skip_previous.svg',
+          $color-grey);
+}
+
+.icon-next {
+  @include icon-img('../node_modules/jenkins-core-theme/images/skip_next.svg',
+          $color-grey);
+}
+
+.icon-save, [src$='/save.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/save.svg',
+          $color-grey);
+}
+
+.icon-package, [src$='package.gif'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/package-down.svg',
+          $color-grey);
+}
+
+.icon-search, [src$='search.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/info_outline.svg',
+          $color-grey);
+}
+
+.icon-stop {
+  @include icon-img('../node_modules/jenkins-core-theme/images/stop.svg',
+          $color-grey);
+}
+
+[src$='/move.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/folder-move.svg',
+          $color-grey);
+}
+
+[src$='/atom.gif'] {
+  @include icon($size-md);
+  @include icon-img('../node_modules/jenkins-core-theme/images/rss-box.svg',
+          $color-yellow);
+}
+
+[src$='credentials.png'] {
+  @include icon($size-xl);
+  @include icon-img('../node_modules/jenkins-core-theme/images/key.svg',
+          $color-grey);
+}
+
+[src$='confighistory.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/build.svg',
+          $color-grey);
+}
+
+[src$='domain.png'] {
+  @include icon($size-xl);
+  @include icon-img('../node_modules/jenkins-core-theme/images/domain.svg',
+          $color-grey);
+}
+
+#description-link img, .icon-gear, [src$='gear.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/pencil.svg',
+          $color-grey);
+}
+
+.icon-go-next {
+  @include icon-img('../node_modules/jenkins-core-theme/images/arrow_forward.svg',
+          $color-grey);
+}
+
+[src$='diskusage48.png'] {
+  @include icon($size-xl);
+  @include icon-img('../node_modules/jenkins-core-theme/images/storage.svg',
+          $color-grey);
+}
+
+[src$='git-32x32.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/git.svg',
+          $color-grey);
+}
+
+[src$='logov3.png'] {
+  @include icon-img('../node_modules/jenkins-core-theme/images/github-circle.svg',
+          $color-grey);
+}
+
+/* Size */
+
+.icon-xlg, [src*='48x48'], .icon48x48 {
+  @include icon($size-xl);
+}
+
+.icon-lg, [src*='32x32'], .icon32x32, [style*='width: 32px'], [width="32"] {
+  @include icon($size-lg);
+}
+
+.icon-md, [src*='24x24'], .icon24x24, [style*='width: 24px'], [width="24"] {
+  @include icon($size-md);
+}
+
+.icon-sm, [src*='16x16'], .icon16x16, [style*='width: 16px'], [width="16"] {
+  @include icon($size-sm);
+}
+
+.task-icon-link[href='/'] {
+  img {
+    padding: 36px 0 0 36px !important;
+    @include icon-img('../node_modules/jenkins-core-theme/images/arrow_back.svg',
+            $color-white);
+  }
+}
+
+#header {
+  .icon-help {
+    @include icon-img('../node_modules/jenkins-core-theme/images/help_outline.svg',
+            $color-white);
+  }
+}
+
+[src*='www.gravatar.com'] {
+  height: auto !important;
+  width: auto !important;
+  padding: 0 !important;
+}

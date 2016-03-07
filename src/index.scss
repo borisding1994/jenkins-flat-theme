@@ -1,0 +1,103 @@
+/*!
+ * Jenkins Flat Theme
+ * https://github.com/zhulux/jenkis-flat-theme
+ *
+ * Copyright (c) 2016 ZhuluX, Inc. (Member of China Renaissance Group)
+ * Author: Boris Ding <borisding@zhulux.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
+
+// variables
+
+$font-size: 14px;
+
+/* Light */
+$color-primary: #2f3f51;
+$color-bg: #f4f5f7;
+$color-text: #34495a;
+$color-link: #333;
+$color-grey: #818a91;
+$color-green: #5cb85c;
+$color-yellow: #f0ad4e;
+$color-red: #d9534f;
+$color-white: #fff;
+$color-black: #333;
+
+/* Console colors */
+$console-selection: rgba(255, 255, 255, 0.15);
+$console-black: $color-black;
+$console-white: #e9eded;
+$console-red: #F77669;
+$console-yellow: #DECB6B;
+$console-lime: #C3E88D;
+$console-light-green: #80CBC4;
+$console-green: #537f7e;
+$console-blue: #82B1FF;
+$console-purple: #c792ea;
+
+$size-sm: 18px;
+$size-md: 24px;
+$size-lg: 36px;
+$size-xl: 48px;
+
+// mixins
+
+@mixin shadow1() {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+// ref: http://codepen.io/noahblon/post/coloring-svgs-in-css-background-images
+@mixin icon-img($url, $icon-color) {
+  mask: url($url) no-repeat 100% 100%;
+  mask-size: cover;
+  background: $icon-color
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@mixin pulse {
+  animation: pulse ease-in-out 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+}
+
+@mixin icon($size) {
+  padding-left: $size * 1.2 !important;
+  padding-top: $size * 1.2 !important;
+  height: 0 !important;
+  width: 0 !important;
+  background-size: 100% 100% !important;
+  font-size: 0 !important;
+}
+
+@import "icons";
+@import "codemirror";
+@import "style";

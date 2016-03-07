@@ -1,27 +1,17 @@
-@import 'variables';
-@import '../node_modules/jenkins-core-theme/less/functions';
-@import '../node_modules/jenkins-core-theme/less/images';
-@import '../node_modules/jenkins-core-theme/less/codemirror';
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300);
-
-* {
-  font-family: 'Roboto', sans-serif !important;
-}
-
 body, table, form, td, th, p {
-  color: @color-text !important;
+  color: $color-text !important;
 }
 
 body {
-  font-family: 'Roboto', sans-serif !important;
-  font-size: 13px !important;
-  line-height: 20px !important;
-  background-color: @color-bg;
+  font-family: -apple-system, '.SFNSText-Regular',"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif !important;
+  font-size: $font-size !important;
+  line-height: $font-size*1.5 !important;
+  background-color: $color-bg;
 }
 
 a, a:hover, a:visited, a:link {
   text-decoration: none !important;
-  color: @color-link;
+  color: $color-link;
   &:hover {
     opacity: 0.75;
   }
@@ -35,7 +25,7 @@ a, a:hover, a:visited, a:link {
   position: absolute;
   top: 12px;
   left: 20px;
-  background-color: @color-link;
+  background-color: $color-link;
   height: 40px;
   width: 170px;
   z-index: 3000;
@@ -46,9 +36,8 @@ a, a:hover, a:visited, a:link {
 }
 
 #header {
-  .shadow1();
   height: 64px;
-  background-color: @color-primary;
+  background-color: $color-primary;
   text-transform: uppercase;
   right: 0;
   left: 0;
@@ -67,7 +56,7 @@ a, a:hover, a:visited, a:link {
   }
 
   #search-box {
-    background: @color-bg;
+    background: $color-bg;
     padding-left: 10px;
   }
 }
@@ -83,15 +72,13 @@ a, a:hover, a:visited, a:link {
 }
 
 .top-sticker-inner {
-  .shadow1();
-
-  background: none repeat scroll 0 0 @color-white !important;
+  background: none repeat scroll 0 0 $color-white !important;
 }
 
 #breadcrumbs LI:hover,
 A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
   background-color: transparent !important;
-  color: @color-link !important
+  color: $color-link !important
 }
 
 #breadcrumbs {
@@ -101,7 +88,7 @@ A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
 }
 
 table.pane tr:nth-child(odd) td {
-  background-color: @color-white
+  background-color: $color-white
 }
 
 th.pane {
@@ -109,7 +96,7 @@ th.pane {
 }
 
 #side-panel .task-link {
-  color: @color-text;
+  color: $color-text;
 }
 
 .bottom-sticker-edge {
@@ -119,13 +106,13 @@ th.pane {
 .bottom-sticker-inner {
   margin: 0 0 0 -15px;
   padding-left: 15px;
-  background: none repeat scroll 0 0 @color-white !important;
-  box-shadow: @color-white 0 3px 8px 1px
+  background: none repeat scroll 0 0 $color-white !important;
+  box-shadow: $color-white 0 3px 8px 1px
 }
 
 #projectstatus th,
 #projectstatus td {
-  color: @color-text
+  color: $color-text
 }
 
 #projectstatus th a {
@@ -142,13 +129,13 @@ a#jenkins-home-link {
 }
 
 table.progress-bar.red td.progress-bar-done {
-  background-color: @color-red !important;
-  border-color: @color-red !important;
+  background-color: $color-red !important;
+  border-color: $color-red !important;
 }
 
 td.progress-bar-done {
-  background-color: @color-green !important;
-  border-color: @color-green !important;
+  background-color: $color-green !important;
+  border-color: $color-green !important;
 }
 
 td.progress-bar-left {
@@ -182,18 +169,17 @@ table.progress-bar {
     transition: .2s ease-out;
     cursor: pointer;
     border: none !important;
-    border-radius: 2px;
+    border-radius: 5px;
     display: inline-block;
     outline: 0;
     padding: 0 2rem;
     text-transform: uppercase;
     vertical-align: middle;
     -webkit-tap-highlight-color: transparent;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   }
   &.primary button {
-    color: @color-white !important;
-    background-color: @color-primary !important;
+    color: $color-white !important;
+    background-color: $color-primary !important;
   }
 
   & + .yui-button {
@@ -203,15 +189,15 @@ table.progress-bar {
 }
 
 .console-output .error-inline {
-  color: @color-red;
+  color: $color-red;
 }
 
 .console-output, .console-output * {
   position: relative;
   font-family: monospace !important;
   font-size: 14px;
-  background: @console-black;
-  color: @console-white;
+  background: $console-black;
+  color: $console-white;
   cursor: text;
 }
 
@@ -220,22 +206,20 @@ table.progress-bar {
 }
 
 [style^="color:gray"] {
-  color: @color-grey !important;
+  color: $color-grey !important;
 }
 
 [style^="color:red"] {
-  color: @color-red !important;
+  color: $color-red !important;
 }
 
 .jenkins_ver:after {
   margin-left: 15px;
-  content: 'afonsof.com/jenkins-material-theme v. @@version'
+  content: 'Theme by ZhuluX.com'
 }
 
-pre {
-  a {
-    cursor: pointer !important;
-  }
+pre a{
+  cursor: pointer !important;
 }
 
 #console-outline-body > li {
@@ -245,4 +229,38 @@ pre {
 .left-bar {
   top: 27px !important;
   left: 16px !important;
+}
+.tabBar .tab a, .tabBar .tab a.addTab,.tabBar [type=radio]:checked ~ a{
+  border: none;
+  background: #fff;
+  color: $color-link;
+  margin-bottom: 0.5rem;
+  &:hover {
+    border: none;
+    background: #fff;
+  }
+}
+.tabBar [type=radio]:checked ~ a{
+  color: $color-primary;
+  border-bottom: 3px solid $color-primary;
+}
+
+#page-body{
+  background: #fff;
+  margin: 2rem 1rem;
+}
+
+footer{
+  border: none;
+  background: $color-bg;
+}
+
+#side-panel .pane-frame:hover, #side-panel .pane-frame.mouseover {
+  border: solid 1px #f0f0f0;
+  border-radius: 4px;
+}
+
+#breadcrumbBar{
+  background: #fff;
+  min-height: 2rem;
 }
