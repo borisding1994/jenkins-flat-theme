@@ -328,7 +328,7 @@
   img {
     padding: 36px 0 0 36px !important;
     @include icon-img('../node_modules/jenkins-core-theme/images/arrow_back.svg',
-            $color-white);
+            $color-link);
   }
 }
 
