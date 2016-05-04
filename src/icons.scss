@@ -13,7 +13,7 @@
           $color-yellow);
 }
 
-[src$='grey.png'], [src$='aborted.png'], [src$='nobuilt.png'], [src$='disabled.png'] {
+[src$='gery2.png'], [src$='grey.png'], [src$='aborted.png'], [src$='nobuilt.png'], [src$='disabled.png'] {
   @include icon-img('../node_modules/jenkins-core-theme/images/remove_circle.svg',
           $color-grey);
 }
@@ -269,7 +269,7 @@
           $color-grey);
 }
 
-[src$='confighistory.png'] {
+[src$='confighistory.png'],[src$='notepad.png'] {
   @include icon-img('../node_modules/jenkins-core-theme/images/build.svg',
           $color-grey);
 }
